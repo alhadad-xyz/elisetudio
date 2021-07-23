@@ -1,0 +1,255 @@
+/* Media Queries Layar Laptop 1024 x 680 */
+@media (max-width: 1024px) {
+    .header__menu {
+        display: none;
+    }
+
+    .banner {
+        padding: 160px 80px;
+    }
+
+    .banner__heading {
+        font-size: 32px;
+    }
+
+    .about {
+        padding: 160px 80px;
+    }
+
+    .about__heading {
+        font-size: 32px;
+    }
+
+    .services__container {
+        padding: inherit 80px;
+    }
+
+    .services__card-img {
+        width: 75%;
+    }
+
+    .services__banner-txt {
+        font-size: 40px;
+        top: 37%;
+    }
+}
+
+/* Media Queries Layar Tablet 768 x 680 */
+@media (max-width: 768px) {
+    
+    body {
+        overflow-x: hidden;
+    }
+
+    /* START HEADER */
+
+    .header {
+        padding: 32px 40px;
+    }
+
+    .header__nav {
+        position: fixed;
+        right: 0;
+        top: 0;
+        width: 75%;
+        height: 100vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        background: var(--light-color);
+        color: var(--dark-color);
+        transform: translateX(100%);
+        opacity: 0;
+        transition: all 1s;
+    }
+
+    .header__nav.slide {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    .header__menu {
+        display: flex;
+    }
+
+    /* END HEADER */
+
+    /* START BANNER */
+
+    .banner {
+        flex-direction: column;
+        padding: 0 40px;
+        padding-top: 120px;
+        width: 100vw;
+    }
+    
+    .banner__description {
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .banner__heading {
+        font-size: 32px;
+        margin-bottom: 8px;
+    }
+
+    .banner__subheading {
+        font-size: 16px;
+        margin-bottom: 24px;
+    }
+
+    .about {
+        flex-direction: column;
+        padding: 0 40px;
+        padding-top: 120px;
+        width: 100vw;
+    }
+    
+    .about__description {
+        width: 100%;
+        padding: 0;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about__heading {
+        font-size: 32px;
+        margin-bottom: 8px;
+    }
+
+    .about__subheading {
+        font-size: 16px;
+        margin-bottom: 24px;
+    }
+
+    .banner__cta {
+        font-size: 16px;
+    }
+
+    /* END BANNER */
+    
+    /* START SERVICES */
+    .services__card-img {
+        width: 85%;
+        padding-top: 25px;
+    }
+
+    .services__banner-txt {
+        font-size: 32px;
+    }
+
+    /* START PORTFOLIO */
+    .portofolio__photo {
+        margin-left: 0;
+        justify-content: center;
+    }
+    .portofolio__photo-item {
+        width: 40%;
+        margin: 0 20px 50px 20px;
+    }
+    /* END PORTFOLIO */
+}
+
+/* Media Queries Layar Mobile */
+@media (max-width: 670px) {
+    .banner {
+        padding: 0 40px;
+        padding-top: 80px;
+    }
+
+    .services {
+        padding: 40px 0;
+        padding-top: 80px;
+    }
+
+    .services__container {
+        padding: 0 40px;
+    }
+
+    .services__heading {
+        font-size: 18px;
+    }
+
+    .services__card {
+        flex-direction: column;
+    }
+
+    .services__card-left,
+    .services__card-right {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .services__card-img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .services__card-title {
+        font-size: 22px;
+    }
+
+    .services__card-txt {
+        font-size: 16px;
+    }
+
+    .services__banner-img {
+        width: 100%;
+    }
+
+    .services__banner-txt {
+        font-size: 12px;
+        letter-spacing: 5px;
+        top: 32%;
+    }
+
+    /* START PORTFOLIO */
+    .portofolio {
+        padding: 0 40px;
+        padding-top: 80px;
+    }
+
+    .portofolio__container {
+        padding: 0;
+    }
+
+    .portofolio__photo {
+        /* overflow-x: scroll; */
+        overflow-y: hidden;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+    }
+    
+    .portofolio__photo-item {
+        width: 100%;
+        margin: 0 50px 20px 0;
+    }
+    .portofolio__title {
+        font-size: 18px;
+    }
+    .portofolio__title p {
+        display: block;
+    }
+    /* END PORTFOLIO */
+
+    footer {
+        text-align: center;
+    }
+
+    .footer__left {
+        float: none;
+        margin-bottom: 24px;
+        width: 100%;
+    }
+
+    .footer__center {
+        width: 100%;
+    }
+
+    .footer__right {
+        float: none;
+        margin: 24px 0;
+        width: 100%;
+    }
+}
