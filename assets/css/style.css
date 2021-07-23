@@ -372,6 +372,63 @@ body {
     width: 120px;
 }
 
+/* START CONTACT */
+
+.contact {
+    padding: 160px 80px;
+    text-align: center;
+}
+
+.contact__title {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact__input,
+.contact__textarea {
+    padding: 4px;
+    border: none;
+    width: 50%;
+    border-bottom: 1px solid var(--accent-color);
+    background: transparent;
+    margin-bottom: 24px;
+    outline: none;
+    color: var(--light-color);
+}
+
+.contact__textarea {
+    height: 80px;
+}
+
+.contact__input:focus,
+.contact__textarea:focus {
+    border-bottom: 1px solid var(--light-color);
+}
+
+.contact__btn {
+    border: none;
+    background: var(--accent-color);
+    color: var(--dark-color);
+    margin: 0 16px;
+    padding: 8px 16px;
+    border-radius: 2px;
+    font-weight: 700;
+}
+
+.contact__btn:hover {
+    background-color: var(--light-color);
+    cursor: pointer;
+    transition: .5s;
+}
+
+/* START FOOTER */
+
 footer {
     width: 100%;
     background-color: #262626;
