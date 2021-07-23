@@ -149,6 +149,11 @@
         margin: 0 20px 50px 20px;
     }
     /* END PORTFOLIO */
+
+    .contact__input,
+    .contact__textarea {
+        width: 80%;
+    }
 }
 
 /* Media Queries Layar Mobile */
